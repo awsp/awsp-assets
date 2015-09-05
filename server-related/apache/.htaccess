@@ -1,0 +1,5 @@
+RedirectMatch 404 (?i)\.git
+RedirectMatch 404 (?i)\.svn
+
+# all hidden file
+RedirectMatch 404 (?i)/\..+
