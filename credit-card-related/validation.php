@@ -1,7 +1,7 @@
 <?php
 
 funciton validation($cardValue) {
-  $creditCardNumber = $value;
+  $creditCardNumber = $cardValue;
 
   // Get the first digit
   $firstNumber = substr($creditCardNumber, 0, 1);
