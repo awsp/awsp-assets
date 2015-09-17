@@ -3,42 +3,42 @@ Assume this is using account that has root / administartive privileges.
 
 #### User Add
 ```
-useradd awsp
+useradd <username>
 ```
 
 #### User Add w/ home directory (/home/awsp)
 ```
-useradd -m awsp
+useradd -m <username>
 ```
 
 #### User password
 ```
-passwd awsp
+passwd <username>
 ```
 
 #### Change someone's password
 ```
-passwd awsp
+passwd <username>
 ```
 
-#### Add new user to a group caleld `a_group`
+#### Add new user to a group called `a_group`
 ```
-useradd -G a_group -m awsp
+useradd -G a_group -m <username>
 ```
 
 #### Add existing user to a group called `a_group`
 ```
-usermod -G a_group awsp
+usermod -G a_group <username>
 ```
 
 #### Make `bash` as default Shell for a user, assuming `/bin/bash` is the location of bash
 ```
-usermod -s /bin/bash awsp
+usermod -s /bin/bash <username>
 ```
 
 #### Delete a user
 ```
-userdel awsp
+userdel <username>
 ```
 
 #### Change my current password
@@ -46,7 +46,7 @@ userdel awsp
 passwd
 ```
 
-
-
-
-
+#### Add user to sudo group to allow them to do sudo
+```
+usermod -a -G sudo <username>
+```
