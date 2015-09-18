@@ -50,3 +50,8 @@ passwd
 ```
 usermod -a -G sudo <username>
 ```
+
+#### List a user's group
+```
+id -Gn username
+```
